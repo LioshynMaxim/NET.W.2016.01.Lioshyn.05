@@ -8,10 +8,17 @@ namespace Task1
 {
     public static class EuclideanAlgorithm
     {
-        public static int GreatestCommonSivisor()
+
+        public static int GreatestCommonSivisor(int a, int b)
         {
 
-            return 1;
+            return b != 0?GreatestCommonSivisor(b, a % b):a;
+        }
+
+        public static int GreatestCommonSivisor(params int[] numbInts)
+        {
+
+            return numbInts.Length;
         }
     }
 }
