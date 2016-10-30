@@ -16,7 +16,12 @@ namespace Task1
 
         public static int GreatestCommonSivisor(params int[] numbInts)
         {
-            return numbInts.Length;
+            int boof = GreatestCommonSivisor(numbInts[0], numbInts[1]);
+            for (int i = 2; i <= numbInts.Length - 1; i ++)
+            {
+                boof = GreatestCommonSivisor(boof, numbInts[i]);
+            }
+            return  boof;
         }
     }
 }
