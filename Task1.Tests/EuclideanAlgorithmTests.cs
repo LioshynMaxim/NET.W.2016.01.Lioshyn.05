@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using static Task1.GreatestCommonDivisor;
 
 namespace Task1.Tests
